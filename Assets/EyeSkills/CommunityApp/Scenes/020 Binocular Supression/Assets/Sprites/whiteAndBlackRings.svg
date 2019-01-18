@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="whiteAndBlackRings.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1692063"
+     inkscape:cx="396.85039"
+     inkscape:cy="118.43837"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-text-baseline="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-opacity:0.68527922;stroke:#000000;stroke-width:6.665;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path10"
+       sodipodi:type="arc"
+       sodipodi:cx="85.435555"
+       sodipodi:cy="68.70826"
+       sodipodi:rx="36.161091"
+       sodipodi:ry="36.161091"
+       sodipodi:start="3.9527692"
+       sodipodi:end="3.9522632"
+       d="m 60.533371,42.487929 a 36.161091,36.161091 0 0 1 51.119369,1.314831 36.161091,36.161091 0 0 1 -1.30837,51.11953 36.161091,36.161091 0 0 1 -51.119694,-1.301898 36.161091,36.161091 0 0 1 1.295431,-51.11986"
+       sodipodi:open="true"
+       inkscape:export-xdpi="257.39249"
+       inkscape:export-ydpi="257.39249" />
+    <path
+       sodipodi:open="true"
+       d="m 63.51368,129.71166 a 36.161091,36.161091 0 0 1 51.11936,1.31483 36.161091,36.161091 0 0 1 -1.30836,51.11953 36.161091,36.161091 0 0 1 -51.119696,-1.3019 36.161091,36.161091 0 0 1 1.295431,-51.11986"
+       sodipodi:end="3.9522632"
+       sodipodi:start="3.9527692"
+       sodipodi:ry="36.161091"
+       sodipodi:rx="36.161091"
+       sodipodi:cy="155.93199"
+       sodipodi:cx="88.415863"
+       sodipodi:type="arc"
+       id="path836"
+       style="fill:none;fill-opacity:0.68527922;stroke:#ffffff;stroke-width:6.665;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="257.39249"
+       inkscape:export-ydpi="257.39249" />
+    <rect
+       style="fill:none;fill-opacity:0.68527922;stroke:#ffffff;stroke-width:6.66499996;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.66650002, 0.66650002;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect838"
+       width="119.93535"
+       height="119.93535"
+       x="173.6523"
+       y="-147.22546"
+       transform="rotate(45)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:open="true"
+       d="M 44.407271,258.86423 A 11.608289,11.608289 0 0 1 56.01556,247.25594 11.608289,11.608289 0 0 1 67.623849,258.86423"
+       sodipodi:end="0"
+       sodipodi:start="3.1415927"
+       sodipodi:ry="11.608289"
+       sodipodi:rx="11.608289"
+       sodipodi:cy="258.86423"
+       sodipodi:cx="56.01556"
+       sodipodi:type="arc"
+       id="path825"
+       style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:6.66500044;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="266.32675"
+       inkscape:export-ydpi="266.32675"
+       inkscape:export-filename="/Users/bensenior/WORK/WORKSPACES-Programming/Unity3d/BitBucketPublicEyeSkills/eyeskills/Unity/Assets/EyeSkills/Calibrations/051 DiamondDepthPerception/Assets/cyanRing.png" />
+    <path
+       inkscape:export-ydpi="266.32675"
+       inkscape:export-xdpi="266.32675"
+       style="fill:none;fill-opacity:0.68527922;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path823"
+       sodipodi:type="arc"
+       sodipodi:cx="56.01556"
+       sodipodi:cy="258.86423"
+       sodipodi:rx="36.161091"
+       sodipodi:ry="36.161091"
+       sodipodi:start="3.9527692"
+       sodipodi:end="3.9522632"
+       d="m 31.113377,232.6439 a 36.161091,36.161091 0 0 1 51.119364,1.31483 36.161091,36.161091 0 0 1 -1.308365,51.11953 36.161091,36.161091 0 0 1 -51.119695,-1.3019 36.161091,36.161091 0 0 1 1.295432,-51.11986"
+       sodipodi:open="true"
+       inkscape:export-filename="/Users/bensenior/WORK/WORKSPACES-Programming/Unity3d/BitBucketPublicEyeSkills/eyeskills/Unity/Assets/EyeSkills/Calibrations/051 DiamondDepthPerception/Assets/cyanRing.png" />
+    <path
+       sodipodi:open="true"
+       d="m -171.20869,-284.70349 a 36.161091,36.161091 0 0 1 51.11937,1.31484 36.161091,36.161091 0 0 1 -1.30837,51.11953 36.161091,36.161091 0 0 1 -51.11969,-1.3019 36.161091,36.161091 0 0 1 1.29543,-51.11986"
+       sodipodi:end="3.9522632"
+       sodipodi:start="3.9527692"
+       sodipodi:ry="36.161091"
+       sodipodi:rx="36.161091"
+       sodipodi:cy="-258.48315"
+       sodipodi:cx="-146.3065"
+       sodipodi:type="arc"
+       id="path829"
+       style="fill:none;fill-opacity:0.68527922;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-xdpi="266.32675"
+       inkscape:export-ydpi="266.32675"
+       transform="scale(-1)"
+       inkscape:export-filename="/Users/bensenior/WORK/WORKSPACES-Programming/Unity3d/BitBucketPublicEyeSkills/eyeskills/Unity/Assets/EyeSkills/Calibrations/051 DiamondDepthPerception/Assets/yellowRing.png" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.66499996;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0, 6.66500004, 13.33000008, 19.99500012, 26.66000016, 33.3250002, 39.99000024, 46.65500028, 53.32000033, 59.98500037, 66.65000041, 73.31500045, 79.98000048, 86.64500053, 93.31000057;stroke-dashoffset:0;stroke-opacity:1"
+       id="path831"
+       sodipodi:type="arc"
+       sodipodi:cx="113.05672"
+       sodipodi:cy="214.31673"
+       sodipodi:rx="4.2185345"
+       sodipodi:ry="4.2185345"
+       sodipodi:start="3.9527693"
+       sodipodi:end="3.9522632"
+       sodipodi:open="true"
+       d="m 110.15164,211.25788 a 4.2185345,4.2185345 0 0 1 5.96356,0.15338 4.2185345,4.2185345 0 0 1 -0.15263,5.96358 4.2185345,4.2185345 0 0 1 -5.9636,-0.15188 4.2185345,4.2185345 0 0 1 0.15112,-5.96361"
+       inkscape:export-filename="/Users/bensenior/WORK/OwnProjects/EyeSkills/PrototypeFund/FundApplication1/Sprint3/Assets/whiteFullCircle.png"
+       inkscape:export-xdpi="138.48402"
+       inkscape:export-ydpi="138.48402" />
+    <path
+       inkscape:export-filename="/Users/bensenior/WORK/WORKSPACES-Programming/Unity3d/BitBucketPublicEyeSkills/eyeskills/Unity/Assets/EyeSkills/Calibrations/051 DiamondDepthPerception/Assets/yellowRing.png"
+       inkscape:export-ydpi="266.32675"
+       inkscape:export-xdpi="266.32675"
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:6.66500044;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path820"
+       sodipodi:type="arc"
+       sodipodi:cx="146.3065"
+       sodipodi:cy="-258.57059"
+       sodipodi:rx="11.608289"
+       sodipodi:ry="11.608289"
+       sodipodi:start="3.1415927"
+       sodipodi:end="0"
+       d="m 134.69821,-258.57059 a 11.608289,11.608289 0 0 1 11.60829,-11.60829 11.608289,11.608289 0 0 1 11.60829,11.60829"
+       sodipodi:open="true"
+       transform="scale(1,-1)" />
+  </g>
+</svg>

@@ -1,0 +1,3 @@
+[submodule "Assets/EyeSkills/Framework"]
+	path = Assets/EyeSkills/Framework
+	url = https://gitlab.eyeskills.org/community/EyeSkillsFramework.git/
