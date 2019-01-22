@@ -54,7 +54,7 @@ namespace EyeSkills.Calibrations
         private void sayString(string text)
         {
             Debug.Log("Want to say " + text);
-            audioManager.Say(text);
+            AudioManager.instance.Say(text);
         }
 
         private void sayFrequency(float freq)
@@ -75,13 +75,11 @@ namespace EyeSkills.Calibrations
         {
             if (inConflict)
             {
-                conflictBackground.IntoConflict();
                 conflictBackground.Show(true);
             }
             else
             {
                 conflictBackground.Show(false);
-                conflictBackground.OutOfConflict();
             }
 
             Debug.Log("Conflict Status " + inConflict);
@@ -112,7 +110,7 @@ namespace EyeSkills.Calibrations
                 Debug.Log("Increasing Freq - short button press right");
                 sayFrequency((int) alternator.AlterFrequency(+freqInc));
             }
-            else if (EyeSkillsInput.instance.GetLongButtonPress("EyeSkills Up") || (NetworkManager.instance.GetButton("conflict")))
+            else if (EyeSkillsInput.instance.GetShortButtonPress("EyeSkills Up") || (NetworkManager.instance.GetButton("conflict")))
             {
                 Debug.Log("Conflict");
                 sayConflict(conflict(true));
@@ -121,7 +119,7 @@ namespace EyeSkills.Calibrations
             {
                 sayString("alternatingFusionInstructions");
             }
-            else if (EyeSkillsInput.instance.GetLongButtonPress("EyeSkills Down") || (NetworkManager.instance.GetButton("noConflict")))
+            else if (EyeSkillsInput.instance.GetShortButtonPress("EyeSkills Down") || (NetworkManager.instance.GetButton("noConflict")))
             {
                 Debug.Log("Nonconflict");
                 sayConflict(conflict(false));

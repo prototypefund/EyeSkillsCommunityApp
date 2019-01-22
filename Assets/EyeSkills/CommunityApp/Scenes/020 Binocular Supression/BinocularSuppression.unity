@@ -210,6 +210,16 @@ Prefab:
       propertyPath: mainSceneController
       value: 
       objectReference: {fileID: 472396855}
+    - target: {fileID: 23355582847557576, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92f91aaa99ffc4a31aa02614321b883c, type: 2}
+    - target: {fileID: 23038495043880816, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92f91aaa99ffc4a31aa02614321b883c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
   m_IsPrefabAsset: 0

@@ -28,3 +28,7 @@ sysinfo.txt
 
 # Builds
 *.unitypackage
+
+# Framework dependencies
+FrameworkDependencies/
+FrameworkDependencies.meta

@@ -87,7 +87,7 @@ namespace EyeSkills.Calibrations
         private void sayString(string text)
         {
             //Debug.Log("Want to say " + text);
-            audioManager.Say(text);
+            AudioManager.instance.Say(text);
         }
 
         private float sayDistance(float distance)

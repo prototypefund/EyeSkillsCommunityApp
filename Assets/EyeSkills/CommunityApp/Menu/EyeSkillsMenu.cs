@@ -43,6 +43,7 @@ public class EyeSkillsMenu : MonoBehaviour
 
     public bool skipTitles = false;
     public float powerUILengthScale = 1.8f;
+    //public float powerUILengthScale = 3f;
 
     private int clicks = 0;
 
@@ -158,6 +159,9 @@ public class EyeSkillsMenu : MonoBehaviour
 
     void Start()
     {
+        //A hack to disable the gesture based control in the scenes. That is inappropriate while exploring the environments.
+        PlayerPrefs.SetString("EyeSkills.practitionerMode", "1"); 
+
         if (PlayerPrefs.GetString("EyeSkills.Practitioner") == "") {
           //SceneManager.LoadScene("Username");
           PlayerPrefs.SetString("EyeSkills.Name", System.Guid.NewGuid().ToString());

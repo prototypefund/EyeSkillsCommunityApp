@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028353, g: 0.2257137, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -160,48 +160,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a727c3206aa4224d965a3733c14ae6b, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &650690435
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1584359055}
-    m_Modifications:
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 765426a6408ca481eb726fcd9429043f, type: 2}
-  m_IsPrefabAsset: 0
+--- !u!114 &551478200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114833139676080564, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189,
+    type: 2}
+  m_PrefabInternal: {fileID: 871549265}
+  m_Script: {fileID: 11500000, guid: a3dad8b93722342289b6bce33f75f78d, type: 3}
 --- !u!1001 &871549265
 Prefab:
   m_ObjectHideFlags: 0
@@ -239,7 +203,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4208155657222638, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114284410481340016, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189,
         type: 2}
@@ -283,21 +247,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1371803386561616, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104493913278196, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114622497827912936, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &1336159570 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114901489266010114, guid: 765426a6408ca481eb726fcd9429043f,
-    type: 2}
-  m_PrefabInternal: {fileID: 650690435}
-  m_Script: {fileID: 11500000, guid: a3dad8b93722342289b6bce33f75f78d, type: 3}
---- !u!4 &1336159571 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4588489841698176, guid: 765426a6408ca481eb726fcd9429043f,
-    type: 2}
-  m_PrefabInternal: {fileID: 650690435}
 --- !u!1 &1360029118
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +438,6 @@ Transform:
   m_Children:
   - {fileID: 1438690858}
   - {fileID: 1886435607}
-  - {fileID: 1336159571}
   - {fileID: 159050771}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -509,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9412208477cde467f9ba2f6cdb576f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conflictBackground: {fileID: 1336159570}
+  conflictBackground: {fileID: 551478200}
   alternator: {fileID: 1886435608}
 --- !u!4 &1859836028
 Transform:
