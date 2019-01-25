@@ -29,6 +29,9 @@ sysinfo.txt
 # Builds
 *.unitypackage
 
+# Gradle
+.gradle
+
 # Framework dependencies
 FrameworkDependencies/
 FrameworkDependencies.meta
