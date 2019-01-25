@@ -33,8 +33,6 @@ namespace EyeSkills.Calibrations
         private EyeSkillsCameraRig cameraRig;
         public float secondsOfStillnessForSelect = 10f;
 
-
-
         /// <summary>
         /// The selection indicator.
         /// </summary>
