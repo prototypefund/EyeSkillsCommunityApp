@@ -231,7 +231,7 @@ MonoBehaviour:
     scene: MonocularSuppression
     description: What can you see with each individual eye?
     logo: 
-    audioId: menu-Monocular Suppression
+    audioId: menu-MonocularSuppression
   - title: 
     text: Binocular Suppression
     scene: BinocularSuppression

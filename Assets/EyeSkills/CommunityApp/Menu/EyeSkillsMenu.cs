@@ -57,6 +57,7 @@ public class EyeSkillsMenu : MonoBehaviour
     void BuildMenu(MenuItem[] items)
     {
 
+        AudioManager.instance.Say("Menu");
         string menu = "";
         int i =0;
 
