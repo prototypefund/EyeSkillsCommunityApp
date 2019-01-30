@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073993, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731753, g: 0.13414776, b: 0.121078834, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2b35bb3f864417cae01773ef23248a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  phoneCamera: {fileID: 855718036}
   blinker1: {fileID: 1677636311}
   blinker2: {fileID: 135017055}
   suppressionReductionRate: 0.1
@@ -494,6 +495,12 @@ RectTransform:
   m_AnchoredPosition: {x: 640, y: 400}
   m_SizeDelta: {x: 1280, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &855718036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114757788552708204, guid: bcf9d98f1b9a06b4fa03a57ce4dbf189,
+    type: 2}
+  m_PrefabInternal: {fileID: 913224329}
+  m_Script: {fileID: 11500000, guid: 5475e7d34a3a3413abd1a9069b63faa6, type: 3}
 --- !u!1 &896676954
 GameObject:
   m_ObjectHideFlags: 0

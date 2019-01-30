@@ -94,57 +94,82 @@ public class EyeSkillsMenu : MonoBehaviour
 #endif
     }
 
-    void EnterScene() {
-      GameObject.Find("#PowerUI").SetActive(false);
-      if( selectedScene >= unlocked ) {
+void EnterScene() {
+    GameObject.Find("#PowerUI").SetActive(false);
+    if( selectedScene >= unlocked ) {
         unlocked++;
         if( unlocked > 4 ) {
           unlocked = 0;
           PlayerPrefs.SetInt("EyeSkills.Runs", PlayerPrefs.GetInt("EyeSkills.Runs") + 1);
         }
         PlayerPrefs.SetInt("EyeSkills.MenuUnlocked", unlocked);
-      }
-
-      if( selectedScene == 6) {
-        OnGrantButtonPress();
-          return;
-      }
-
-      UnityEngine.SceneManagement.SceneManager.LoadScene(menuItems[selectedScene].scene);
     }
 
+    if (menuItems[selectedScene].scene == "VirtuallyReal"){
+        Debug.Log("Asking for camera permission");
+        OnGrantButtonPress();
+        Debug.Log("Asking for USB Permission");
+        RequestUSBPermissions();          
+    }
 
-        private bool CheckPermissions()
+    UnityEngine.SceneManagement.SceneManager.LoadScene(menuItems[selectedScene].scene);
+}
+
+
+    private bool CheckPermissions()
+    {
+        if (Application.platform != RuntimePlatform.Android)
         {
-            if (Application.platform != RuntimePlatform.Android)
-            {
-                return true;
-            }
-
-            return AndroidPermissionsManager.IsPermissionGranted("android.permission.CAMERA");
+            return true;
         }
+        return AndroidPermissionsManager.IsPermissionGranted("android.permission.CAMERA");
+        
+    }
 
-        public void OnGrantButtonPress()
-        {
-            AndroidPermissionsManager.RequestPermission(new []{"android.permission.CAMERA"}, new AndroidPermissionCallback(
-                grantedPermission =>
-                {
-                  Debug.Log("GRANTED PERMISSION");
-                    // The permission was successfully granted, restart the change avatar routine
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(menuItems[selectedScene].scene);
-                },
-                deniedPermission =>
-                {
-                  Debug.Log("DENIED PERMISSION");
-                    // The permission was denied
-                },
-                deniedPermissionAndDontAskAgain =>
-                {
-                  Debug.Log("DENIED PERMISSION AND DONT ASK AGAIN");
-                    // The permission was denied, and the user has selected "Don't ask again"
-                    // Show in-game pop-up message stating that the user can change permissions in Android Application Settings
-                    // if he changes his mind (also required by Google Featuring program)
-                }));
+    public void RequestUSBPermissions()
+    {
+        AndroidPermissionsManager.RequestPermission(new[] { "android.permission.USB_PERMISSION" }, new AndroidPermissionCallback(
+            grantedPermission =>
+            {
+                Debug.Log("GRANTED PERMISSION");
+                // The permission was successfully granted, restart the change avatar routine
+                UnityEngine.SceneManagement.SceneManager.LoadScene(menuItems[selectedScene].scene);
+            },
+            deniedPermission =>
+            {
+                Debug.Log("DENIED PERMISSION");
+                // The permission was denied
+            },
+            deniedPermissionAndDontAskAgain =>
+            {
+                Debug.Log("DENIED PERMISSION AND DONT ASK AGAIN");
+                // The permission was denied, and the user has selected "Don't ask again"
+                // Show in-game pop-up message stating that the user can change permissions in Android Application Settings
+                // if he changes his mind (also required by Google Featuring program)
+            }));
+    }
+
+    public void OnGrantButtonPress()
+    {
+        AndroidPermissionsManager.RequestPermission(new []{"android.permission.CAMERA"}, new AndroidPermissionCallback(
+            grantedPermission =>
+            {
+              Debug.Log("GRANTED PERMISSION");
+                // The permission was successfully granted, restart the change avatar routine
+                UnityEngine.SceneManagement.SceneManager.LoadScene(menuItems[selectedScene].scene);
+            },
+            deniedPermission =>
+            {
+              Debug.Log("DENIED PERMISSION");
+                // The permission was denied
+            },
+            deniedPermissionAndDontAskAgain =>
+            {
+              Debug.Log("DENIED PERMISSION AND DONT ASK AGAIN");
+                // The permission was denied, and the user has selected "Don't ask again"
+                // Show in-game pop-up message stating that the user can change permissions in Android Application Settings
+                // if he changes his mind (also required by Google Featuring program)
+            }));
     }
 
     void EnterSceneLockedEye(bool left)

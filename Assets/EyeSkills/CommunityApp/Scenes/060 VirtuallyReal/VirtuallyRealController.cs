@@ -25,7 +25,9 @@ namespace EyeSkills.Experiences
         private Vector3 misalignmentRotation;
         private float currentAngle;
         private EyeSkillsInput esInput;
+        public PhoneCamera phoneCamera;
         public GameObject blinker1, blinker2;
+        private int currentCam=0;
         private bool userWantsStraightening = false;
         private bool areRemovingSuppression = false;
         public float suppressionReductionRate = 0.1f;
@@ -121,18 +123,18 @@ namespace EyeSkills.Experiences
                 userWantsStraightening = true;
             }
 
-            if (esInput.GetShortButtonPress("EyeSkills Up"))
-            {
-                AudioManager.instance.Say("BlinkersOn");
-                blinker1.SetActive(true);
-                blinker2.SetActive(true);
-            }
-            else if (esInput.GetShortButtonPress("EyeSkills Down"))
-            {
-                AudioManager.instance.Say("BlinkersOff");
-                blinker1.SetActive(false);
-                blinker2.SetActive(false);
-            }
+            //if (esInput.GetShortButtonPress("EyeSkills Up"))
+            //{
+            //    AudioManager.instance.Say("BlinkersOn");
+            //    blinker1.SetActive(true);
+            //    blinker2.SetActive(true);
+            //}
+            //else if (esInput.GetShortButtonPress("EyeSkills Down"))
+            //{
+            //    AudioManager.instance.Say("BlinkersOff");
+            //    blinker1.SetActive(false);
+            //    blinker2.SetActive(false);
+            //}
 
             if (userWantsStraightening)
             {
@@ -180,6 +182,12 @@ namespace EyeSkills.Experiences
                     if (Mathf.Approximately(currentSuppressionRatio, 0f))
                         AudioManager.instance.Say("SuppressionCompensationRemoved");
                 }
+            }
+            if (esInput.GetShortButtonPress("EyeSkills Up")){ //Cycle through the available cameras
+                int camID = currentCam % phoneCamera.getNumberOfCameras();
+                Debug.Log("Trying to choose camera number " + camID);
+                phoneCamera.startCamera(camID);
+                currentCam += 1;
             }
         }
     }

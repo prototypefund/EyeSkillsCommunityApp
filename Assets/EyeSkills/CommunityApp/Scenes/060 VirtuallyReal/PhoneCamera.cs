@@ -20,6 +20,7 @@ namespace EyeSkills.Experiences
     {
         private bool camAvailable;
         private WebCamTexture backCam;
+        private WebCamDevice[] devices;
 
         public RawImage background;
         public AspectRatioFitter fit;
@@ -38,10 +39,36 @@ namespace EyeSkills.Experiences
             camAvailable = false;
         }
 
+        /// <summary>
+        /// Starts the camera. Abstracted out so we can switch through available cameras manually.
+        /// </summary>
+        /// <param name="cam">Cam.</param>
+        public void startCamera(int cam){
+            Debug.Log("Trying to set camera");
+            backCam = new WebCamTexture(devices[cam].name, Screen.width, Screen.height);
+            Debug.Log("Back camera set");
+            if (backCam == null)
+            {
+                Debug.LogWarning("Could not find backward facing camera.");
+                camAvailable = false;
+                //TODO: Other cleanup?
+            }
+            Debug.Log("Setting texture");
+            background.texture = backCam;
+            Debug.Log("Background texture set");
+            Debug.Log("About to play back camera " + backCam.deviceName + " name: " + backCam.name);
+            backCam.Play();
+            camAvailable = true;
+        }
+
+        public int getNumberOfCameras(){
+            return devices.Length;
+        }
+
         void Start()
         {
             Debug.Log("Starting PhoneCamera script");
-            WebCamDevice[] devices = WebCamTexture.devices;
+            devices = WebCamTexture.devices;
 
             if (devices.Length == 0)
             {
@@ -60,20 +87,7 @@ namespace EyeSkills.Experiences
             }
             //0 is main camera with auto focus
             //2 is wide-angle
-            Debug.Log("Trying to set Backcamera");
-            backCam = new WebCamTexture(devices[0].name, Screen.width, Screen.height);
-            Debug.Log("Back camera set");
-            if (backCam == null)
-            {
-                Debug.LogWarning("Could not find backward facing camera.");
-                return;
-            }
-            Debug.Log("Setting texture");
-            background.texture = backCam;
-            Debug.Log("Background texture set");
-            Debug.Log("About to play back camera " + backCam.deviceName + " name: " + backCam.name);
-            backCam.Play();
-            camAvailable = true;
+            startCamera(0);
         }
 
         void Update()
