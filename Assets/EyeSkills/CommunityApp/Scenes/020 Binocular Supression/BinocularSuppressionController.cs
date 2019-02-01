@@ -73,7 +73,7 @@ namespace EyeSkills.Calibrations
         {
             // TODO: Turns out this has some issues. It's -1 at the upper extent, and 1 at the lower. It seems to also extend beyond 1/-1 which is shouldn't.
             // TODO : Really, we want this to be a non-linear control, it should be possible at the extremes to spend longer with more control
-            brightnessRatio = Mathf.Clamp(ratioController.getDirection(), -1, 1);
+            brightnessRatio = Mathf.Clamp(ratioController.getVerticalDirection(), -1, 1);
 
             // Don't over communicate :-)
             if (Mathf.Abs(previousBrightnessRatio - brightnessRatio) > 0.01)
@@ -100,7 +100,7 @@ namespace EyeSkills.Calibrations
                 {
                     //redraw the indicator and play a rising tone?!?
                     float percentage = (still / secondsOfStillnessForSelect);
-                    //Debug.Log("Percentage still " + percentage);
+                    //Debug.Log("Percentage still " + percentage); 
                     indicator.SetIndicatorPercentage(percentage);
                 }
             }
