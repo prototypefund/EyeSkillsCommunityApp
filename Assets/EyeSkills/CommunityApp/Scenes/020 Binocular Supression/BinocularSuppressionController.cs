@@ -20,7 +20,6 @@ namespace EyeSkills.Calibrations
     [System.Serializable]
     public class BinocularSuppressionController : MonoBehaviour
     {
-        public GameObject trackedCamera;
         public GameObject cameraRigObject;
         public ConflictZoneModel model;
 
@@ -28,7 +27,7 @@ namespace EyeSkills.Calibrations
 
         private float brightnessRatio;
         private float previousBrightnessRatio = -2;
-        private EyeSkillsVRHeadsetInput ratioController;
+        public EyeSkillsVRHeadsetInput ratioController;
         private EyeSkillsInput esInput;
         private EyeSkillsCameraRig cameraRig;
         public float secondsOfStillnessForSelect = 10f;
@@ -53,7 +52,7 @@ namespace EyeSkills.Calibrations
                                                              
             ignoreStillnessSensor = (PlayerPrefs.GetString("EyeSkills.practitionerMode") == "1") ? true : false;
 
-            ratioController = new EyeSkillsVRHeadsetInput(trackedCamera);
+            //ratioController = new EyeSkillsVRHeadsetInput();
             esInput = EyeSkillsInput.instance;
             cameraRig = cameraRigObject.GetComponent<EyeSkillsCameraRig>();
             brightnessRatio = 0;
@@ -73,7 +72,7 @@ namespace EyeSkills.Calibrations
         {
             // TODO: Turns out this has some issues. It's -1 at the upper extent, and 1 at the lower. It seems to also extend beyond 1/-1 which is shouldn't.
             // TODO : Really, we want this to be a non-linear control, it should be possible at the extremes to spend longer with more control
-            brightnessRatio = Mathf.Clamp(ratioController.getDirection(), -1, 1);
+            brightnessRatio = Mathf.Clamp(ratioController.getVerticalDirection(), -1, 1);
 
             // Don't over communicate :-)
             if (Mathf.Abs(previousBrightnessRatio - brightnessRatio) > 0.01)
